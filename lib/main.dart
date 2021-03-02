@@ -16,20 +16,20 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor:Color(0xff22456d),
       body: Stack(
         children: <Widget>[
           CustomScrollView(
             slivers: <Widget>[
               SliverAppBar(
-                expandedHeight: 450,
+                expandedHeight: 200,
                 backgroundColor: Colors.black,
                 flexibleSpace: FlexibleSpaceBar(
                   collapseMode: CollapseMode.pin,
                   background: Container(
                     decoration: BoxDecoration(
                       image: DecorationImage(
-                        image: AssetImage('assets/images/emma.jpg'),
+                        image: AssetImage('images/a.png'),
                         fit: BoxFit.cover
                       )
                     ),
@@ -38,8 +38,8 @@ class _HomePageState extends State<HomePage> {
                         gradient: LinearGradient(
                           begin: Alignment.bottomRight,
                           colors: [
-                            Colors.black,
-                            Colors.black.withOpacity(.3)
+                            Colors.white,
+                            Colors.blue
                           ]
                         )
                       ),
@@ -49,18 +49,18 @@ class _HomePageState extends State<HomePage> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: <Widget>[
-                            FadeAnimation(1, Text("Emma Watson", style: 
+                            FadeAnimation(1, Text("FCFS", style:
                               TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 40)
                             ,)),
                             SizedBox(height: 20,),
                             Row(
                               children: <Widget>[
                                 FadeAnimation(1.2, 
-                                  Text("60 Videos", style: TextStyle(color: Colors.grey, fontSize: 16),)
+                                  Text("Description", style: TextStyle(color: Colors.black, fontSize: 16),)
                                 ),
                                 SizedBox(width: 50,),
-                                FadeAnimation(1.3, Text("240K Subscribers", style: 
-                                  TextStyle(color: Colors.grey, fontSize: 16)
+                                FadeAnimation(1.3, Text(" ", style:
+                                  TextStyle(color: Colors.white, fontSize: 16)
                                 ,))
                               ],
                             )
@@ -78,15 +78,16 @@ class _HomePageState extends State<HomePage> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
-                        FadeAnimation(1.6, Text("Emma Charlotte Duerre Watson was born in Paris, France, to English parents, Jacqueline Luesby and Chris Watson, both lawyers. She moved to Oxfordshire when she was five, where she attended the Dragon School.", 
-                        style: TextStyle(color: Colors.grey, height: 1.4),)),
+                        FadeAnimation(1.6, Text(
+                            " France, to English parents, Jacqueline Luesby and Chris Watson, both lawyers. She moved to Oxfordshire when she was five, where she attended the Dragon School.",
+                        style: TextStyle(color: Colors.white, height: 1.4),)),
                         SizedBox(height: 40,),
                         FadeAnimation(1.6, 
                           Text("Born", style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),)
                         ),
                         SizedBox(height: 10,),
                         FadeAnimation(1.6, 
-                          Text("April, 15th 1990, Paris, France", style: TextStyle(color: Colors.grey),)
+                          Text("April, 15th 1990, Paris, France", style: TextStyle(color: Colors.white),)
                         ),
                         SizedBox(height: 20,),
                         FadeAnimation(1.6, 
@@ -106,9 +107,9 @@ class _HomePageState extends State<HomePage> {
                           child: ListView(
                             scrollDirection: Axis.horizontal,
                             children: <Widget>[
-                              makeVideo(image: 'assets/images/emma-1.jpg'),
-                              makeVideo(image: 'assets/images/emma-2.jpg'),
-                              makeVideo(image: 'assets/images/emma-3.jpg'),
+                              makeVideo(image: 'images/emma-1.jpg'),
+                              makeVideo(image: 'images/emma-2.jpg'),
+                              makeVideo(image: 'images/emma-3.jpg'),
                             ],
                           ),
                         )),
