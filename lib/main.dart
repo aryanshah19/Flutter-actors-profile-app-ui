@@ -93,16 +93,17 @@ class _HomePageState extends State<HomePage> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
-                        FadeAnimation(
+                        /*FadeAnimation(
                             1.6,
                             Text(
-                              "1.Given n processes with their burst times, the task is to find average waiting time and average turn around time using FCFS scheduling algorith\n\n2.First in, first out (FIFO), also known as first come, first served (FCFS), is the simplest scheduling algorithm.\n\n3.FIFO simply queues processes in the order that they arrive in the ready queue.",
+                              " ",
                               style:
                                   TextStyle(color: Colors.white, height: 1.4),
-                            )),
+                            )
+                        ),
                         SizedBox(
                           height: 40,
-                        ),
+                        ),*/
                         FadeAnimation(
                             1.6,
                             Text(
@@ -120,7 +121,10 @@ class _HomePageState extends State<HomePage> {
                             Text(
                               "Given n processes with their burst times, the task is to find average waiting time and average turn around time using FCFS scheduling algorithm.",
                               style:
-                                  TextStyle(color: Colors.white, fontSize: 20),
+                                  TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 16,
+                                  fontWeight: FontWeight.normal),
                             )),
                         SizedBox(
                           height: 20,
