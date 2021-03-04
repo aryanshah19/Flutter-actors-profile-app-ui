@@ -21,7 +21,7 @@ class _HomePageState extends State<HomePage> {
           CustomScrollView(
             slivers: <Widget>[
               SliverAppBar(
-                expandedHeight: 400,
+                expandedHeight: 500,
                 backgroundColor: Colors.black,
                 flexibleSpace: FlexibleSpaceBar(
                   collapseMode: CollapseMode.pin,
