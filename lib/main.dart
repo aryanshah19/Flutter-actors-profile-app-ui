@@ -38,8 +38,8 @@ class _HomePageState extends State<HomePage> {
                         gradient: LinearGradient(
                           begin: Alignment.bottomRight,
                           colors: [
-                            Colors.white,
-                            Colors.blue
+                            Color(0xff22456d).withOpacity(0.7),
+                            Color(0xff22456d).withOpacity(0.9)
                           ]
                         )
                       ),
@@ -49,9 +49,9 @@ class _HomePageState extends State<HomePage> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: <Widget>[
-                            FadeAnimation(1, Text("FCFS", style:
-                              TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 40)
-                            ,)),
+                            FadeAnimation(2, Text("FCFS", style:
+                              TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 40),)
+                            ),
                             SizedBox(height: 20,),
                             Row(
                               children: <Widget>[
