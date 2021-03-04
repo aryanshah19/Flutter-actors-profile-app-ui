@@ -21,7 +21,7 @@ class _HomePageState extends State<HomePage> {
           CustomScrollView(
             slivers: <Widget>[
               SliverAppBar(
-                expandedHeight: 500,
+                expandedHeight: 400,
                 backgroundColor: Colors.black,
                 flexibleSpace: FlexibleSpaceBar(
                   collapseMode: CollapseMode.pin,
@@ -35,7 +35,7 @@ class _HomePageState extends State<HomePage> {
                           gradient: LinearGradient(
                               begin: Alignment.bottomRight,
                               colors: [
-                            Colors.blueGrey.withOpacity(0.5),
+                            Color(0XFFF36735).withOpacity(0.75),
                             Colors.transparent
                             //Color(0xff22456d).withOpacity(0.7),
                             //Color(0xff22456d).withOpacity(0.9)
@@ -47,17 +47,17 @@ class _HomePageState extends State<HomePage> {
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: <Widget>[
                             FadeAnimation(
-                                2,
+                                5,
                                 Text(
-                                  "FCFS",
+                                  "LEARN",
                                   style: TextStyle(
                                       color: Color(0xff22456d),
                                       fontWeight: FontWeight.bold,
                                       fontSize: 40),
                                 )),
-                            SizedBox(
-                              height: 20,
-                            ),
+                            /*SizedBox(
+                              height: ,
+                            ),*/
                             /* Row(
                               children: <Widget>[
                                 FadeAnimation(
@@ -120,10 +120,10 @@ class _HomePageState extends State<HomePage> {
                             1.6,
                             Text(
                               "Given n processes with their burst times, the task is to find average waiting time and average turn around time using FCFS scheduling algorithm.",
-                              style:
-                                  TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 16,
+                              //textAlign: TextAlign.justify,
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 16,
                                   fontWeight: FontWeight.normal),
                             )),
                         SizedBox(
@@ -132,7 +132,7 @@ class _HomePageState extends State<HomePage> {
                         FadeAnimation(
                             1.6,
                             Text(
-                              "Nationality",
+                              "2.",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 18,
@@ -144,8 +144,10 @@ class _HomePageState extends State<HomePage> {
                         FadeAnimation(
                             1.6,
                             Text(
-                              "British",
-                              style: TextStyle(color: Colors.grey),
+                              "First in, first out (FIFO), also known as first come, first served (FCFS), is the simplest scheduling algorithm. FIFO simply queues processes in the order that they arrive in the ready queue.",
+                              //textAlign: TextAlign.justify,
+                              style:
+                                  TextStyle(color: Colors.white, fontSize: 16),
                             )),
                         SizedBox(
                           height: 20,
@@ -153,9 +155,32 @@ class _HomePageState extends State<HomePage> {
                         FadeAnimation(
                             1.6,
                             Text(
-                              "Videos",
+                              "3.",
                               style: TextStyle(
                                   color: Colors.white,
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold),
+                            )),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        FadeAnimation(
+                            1.6,
+                            Text(
+                              "In this, the process that comes first will be executed first and next process starts only after the previous gets fully executed.",
+                              //textAlign: TextAlign.justify,
+                              style:
+                                  TextStyle(color: Colors.white, fontSize: 16),
+                            )),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        FadeAnimation(
+                            1.6,
+                            Text(
+                              "IMAGES",
+                              style: TextStyle(
+                                  color: Color(0xFFF36735),
                                   fontSize: 18,
                                   fontWeight: FontWeight.bold),
                             )),
@@ -197,11 +222,14 @@ class _HomePageState extends State<HomePage> {
                     height: 50,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(50),
-                        color: Colors.yellow[700]),
+                        color: Color(0XFFF36735)),
                     child: Align(
                         child: Text(
-                      "Follow",
-                      style: TextStyle(color: Colors.white),
+                      "START",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold),
                     )),
                   ),
                 ),
