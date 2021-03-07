@@ -100,10 +100,10 @@ class _HomePageState extends State<HomePage> {
                               style:
                                   TextStyle(color: Colors.white, height: 1.4),
                             )
-                        ),
-                        SizedBox(
-                          height: 40,
                         ),*/
+                        SizedBox(
+                          height: 20,
+                        ),
                         FadeAnimation(
                             1.6,
                             Text(
@@ -119,7 +119,7 @@ class _HomePageState extends State<HomePage> {
                         FadeAnimation(
                             1.6,
                             Text(
-                              "Given n processes with their burst times, the task is to find average waiting time and average turn around time using FCFS scheduling algorithm.",
+                              "Input n processes with their respective arrival and burst time, upon which our app will provide average waiting time and average turn around time using FCFS scheduling algorithm.",
                               //textAlign: TextAlign.justify,
                               style: TextStyle(
                                   color: Colors.white,
@@ -167,7 +167,7 @@ class _HomePageState extends State<HomePage> {
                         FadeAnimation(
                             1.6,
                             Text(
-                              "In this, the process that comes first will be executed first and next process starts only after the previous gets fully executed.",
+                              "In this algorithm , the process that comes first will be executed first and next process starts only after the previous gets fully executed.",
                               //textAlign: TextAlign.justify,
                               style:
                                   TextStyle(color: Colors.white, fontSize: 16),
@@ -178,11 +178,86 @@ class _HomePageState extends State<HomePage> {
                         FadeAnimation(
                             1.6,
                             Text(
+                              "HOW IT WORKS",
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold),
+                            )),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        FadeAnimation(
+                            1.6,
+                            Text(
+                              "1.",
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold),
+                            )),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        FadeAnimation(
+                            1.6,
+                            Text(
+                              "To input n number of processes there is a button in the top right corner , hitting which another dialogue box appears .",
+                              //textAlign: TextAlign.justify,
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.normal),
+                            )),
+                        /*SizedBox(
+                          height: 20,
+                        ),
+                        FadeAnimation(
+                            1.6,
+                            Text(
                               "IMAGES",
                               style: TextStyle(
                                   color: Color(0xFFF36735),
                                   fontSize: 18,
                                   fontWeight: FontWeight.bold),
+                            )),*/
+                        SizedBox(
+                          height: 20,
+                        ),
+                        FadeAnimation(
+                            1.8,
+                            Container(
+                              height: 200,
+                              child: ListView(
+                                scrollDirection: Axis.horizontal,
+                                children: <Widget>[
+                                  makeVideo(image: 'images/emma-1.jpg'),
+                                  makeVideo(image: 'images/emma-2.jpg'),
+                                ],
+                              ),
+                            )),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        FadeAnimation(
+                            1.6,
+                            Text(
+                              "2.",
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold),
+                            )),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        FadeAnimation(
+                            1.6,
+                            Text(
+                              "For each process one can input respective value for \"AT\" and \"BT\" , failing to which the value will be considered as null.",
+                              //textAlign: TextAlign.justify,
+                              style:
+                                  TextStyle(color: Colors.white, fontSize: 16),
                             )),
                         SizedBox(
                           height: 20,
@@ -196,7 +271,82 @@ class _HomePageState extends State<HomePage> {
                                 children: <Widget>[
                                   makeVideo(image: 'images/emma-1.jpg'),
                                   makeVideo(image: 'images/emma-2.jpg'),
-                                  makeVideo(image: 'images/emma-3.jpg'),
+                                ],
+                              ),
+                            )),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        FadeAnimation(
+                            1.6,
+                            Text(
+                              "3.",
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold),
+                            )),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        FadeAnimation(
+                            1.6,
+                            Text(
+                              "Once you're done with entering the data hit the \"Submit\" button. Repeating the above step will let you add multiple processes .",
+                              //textAlign: TextAlign.justify,
+                              style:
+                                  TextStyle(color: Colors.white, fontSize: 16),
+                            )),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        FadeAnimation(
+                            1.8,
+                            Container(
+                              height: 200,
+                              child: ListView(
+                                scrollDirection: Axis.horizontal,
+                                children: <Widget>[
+                                  makeVideo(image: 'images/emma-1.jpg'),
+                                  makeVideo(image: 'images/emma-2.jpg'),
+                                ],
+                              ),
+                            )),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        FadeAnimation(
+                            1.6,
+                            Text(
+                              "4.",
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold),
+                            )),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        FadeAnimation(
+                            1.6,
+                            Text(
+                              "To edit or delete a process swipe the respective dialog box to the left . On editing a process you may see the visible changes sorted according to arrival times .",
+                              //textAlign: TextAlign.justify,
+                              style:
+                                  TextStyle(color: Colors.white, fontSize: 16),
+                            )),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        FadeAnimation(
+                            1.8,
+                            Container(
+                              height: 200,
+                              child: ListView(
+                                scrollDirection: Axis.horizontal,
+                                children: <Widget>[
+                                  makeVideo(image: 'images/emma-1.jpg'),
+                                  makeVideo(image: 'images/emma-2.jpg'),
                                 ],
                               ),
                             )),
